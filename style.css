@@ -26,6 +26,8 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 a {
@@ -959,4 +961,12 @@ h3 {
   display: block;
   width: 60px;
   border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+
+  .from-left,
+  .from-right {
+    transform: translateY(40px);
+  }
 }
