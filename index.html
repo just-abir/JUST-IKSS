@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JUST-IKSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="Gallery/logo.jpg" alt="My Club logo">
+        <span>JUST-<span class="grad">IKSS</span></span>
+      </a>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-drop">
+          <a href="#events">Events ▾</a>
+          <ul class="drop">
+            <li><a href="#events">Workshops</a></li>
+            <li><a href="#events">Community</a></li>
+          </ul>
+        </li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="donate.html" class="btn btn-green">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="home">
+    <!-- Floating cards. Chobi dite: <div class="float f1"><img src="photo.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:20px"></div> -->
+    <div class="float f1">
+      <img src="Gallery/gallery5.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:20px">
+    </div>
+    <div class="float f2">
+
+      <img src="Gallery/gallery6.jpeg" style="width:100%;height:100%;object-fit:cover;border-radius:20px">
+    </div>
+    <div class="float f3">
+      <img src="Gallery/gallery9.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:20px">
+    </div>
+    <div class="float f4">
+      <img src="Gallery/gallery15.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:20px">
+    </div>
+
+    <div class="container">
+      <h1>Building <span class="grad">Together</span></h1>
+      <p>Write your own tagline here. One short line about what your club or project does.</p>
+      <div class="btns">
+        <a href="#" class="btn btn-primary">Join Us</a>
+        <a href="#events" class="btn">Upcoming Event</a>
+      </div>
+      <div class="stats">
+        <div><b>120</b><span>Members</span></div>
+        <div><b>24</b><span>Events</span></div>
+        <div><b>3+</b><span>Years</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ GALLERY (white section) ============ -->
+  <section class="block light" id="gallery">
+    <div class="container">
+      <h2 class="title">Our <span class="grad">Gallery</span></h2>
+      <div class="gallery">
+        <div class="g-big g1 reveal from-left"> <img src="Gallery/gallery1.jpg" alt="Describe the photo" loading="lazy">
+        </div>
+        <div class="g2 reveal from-bottom"> <img src="Gallery/gallery2.jpg" alt="Describe the photo" loading="lazy">
+        </div>
+        <div class="g3 reveal from-right"> <img src="Gallery/gallery3.jpg" alt="Describe the photo" loading="lazy">
+        </div>
+        <div class="g-wide g4 reveal from-bottom"> <img src="Gallery/gallery14.jpg" alt="Describe the photo"
+            loading="lazy">
+        </div>
+        <div class="g5 reveal from-left"> <img src="Gallery/gallery10.jpg" alt="Describe the photo" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section class="block" id="events">
+    <div class="container">
+      <h2 class="title">Latest <span class="grad">Events</span></h2>
+      <div class="cards">
+        <article class="ecard e1 reveal from-left">
+          <span class="badge">Completed</span>
+          <time>Sep 27, 2026</time>
+          <h3>Event title goes here</h3>
+          <p>A short description of what happened at this event...</p>
+        </article>
+        <article class="ecard e2 reveal from-bottom">
+          <span class="badge">Open</span>
+          <time>Oct 10, 2026</time>
+          <h3>Another event title</h3>
+          <p>Replace this with your own text and photo.</p>
+        </article>
+        <article class="ecard e3 reveal from-right">
+          <span class="badge">Completed</span>
+          <time>Jul 24, 2026</time>
+          <h3>Third event title</h3>
+          <p>Change the colors in the .e1 .e2 .e3 CSS rules.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 My Club. Built while learning HTML &amp; CSS.</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

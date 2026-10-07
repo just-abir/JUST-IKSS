@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate — JUST-IKSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="Gallery/logo.jpg" alt="My Club logo">
+        <span>JUST-<span class="grad">IKSS</span></span>
+      </a> <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="">About</a></li>
+        <li class="has-drop">
+          <a href="index.html#events">Events ▾</a>
+          <ul class="drop">
+            <li><a href="index.html#events">Workshops</a></li>
+            <li><a href="index.html#events">Community</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="donate.html" class="btn btn-green">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="d-hero">
+    <div class="container d-grid">
+      <div>
+        <p class="eyebrow">Support the mission</p>
+        <h1>Contribute to <span class="mint">Our Work and Community.</span></h1>
+        <p class="lead">Explain in two lines how donations are used. Replace this text with your own message.</p>
+        <div class="btns left">
+          <a href="#methods" class="btn btn-green">Donate Now</a>
+          <a href="#methods" class="btn btn-gold">Become a monthly donor</a>
+        </div>
+      </div>
+      <aside class="glass reveal from-right">
+        <div class="top"><span class="pill">A reminder</span><span class="ref">1:1</span></div>
+        <p class="quote">"Those who spend their wealth in the way of Allah is like a seed which grows seven ears; in
+          every ear is a hundred grains. And Allah multiplies for whom He wills."</p>
+        <p class="by">—Surah Al-Baqarah (2:261)</p>
+      </aside>
+    </div>
+  </header>
+
+  <section class="block" id="methods">
+    <div class="container">
+      <div class="panel">
+        <div class="panel-head">
+          <div class="icon">💳</div>
+          <div><small>DONATE</small>
+            <h2>Donation Methods</h2>
+          </div>
+          <span class="pill">Send Money</span>
+        </div>
+
+        <div class="note">
+          <span>Already a member? <b>Log in first</b> to donate from your account.</span>
+          <a href="#" class="btn btn-cream">Log in</a>
+        </div>
+
+        <ol class="steps">
+          <li><i>1</i>Pick a method</li>
+          <li><i>2</i>Send money</li>
+          <li><i>3</i>Submit donation record</li>
+        </ol>
+
+        <div class="methods">
+          <div class="method">
+            <div class="m-head"><span class="m-icon" style="--c:#e2136e">A</span><b>BIKASH</b><span class="pill">Send
+                Money</span></div>
+            <div class="num"><code>01521746615</code><button class="copy" data-copy="01XXXXXXXXX">Copy</button></div>
+            <div class="num"><code>01521746615</code><button class="copy" data-copy="01YYYYYYYYY">Copy</button></div>
+          </div>
+          <div class="method">
+            <div class="m-head"><span class="m-icon" style="--c:#f97316">B</span><b>NAGAD</b><span class="pill">Send
+                Money</span></div>
+            <div class="num"><code>01XXXXXXXXX</code><button class="copy" data-copy="01XXXXXXXXX">Copy</button></div>
+            <div class="num"><code>01YYYYYYYYY</code><button class="copy" data-copy="01YYYYYYYYY">Copy</button></div>
+          </div>
+          <div class="method">
+            <div class="m-head"><span class="m-icon" style="--c:#7e22ce">C</span><b>WALLET C</b><span class="pill">Send
+                Money</span></div>
+            <div class="num"><code>01XXXXXXXXX</code><button class="copy" data-copy="01XXXXXXXXX">Copy</button></div>
+          </div>
+          <div class="method">
+            <div class="m-head"><span class="m-icon">৳</span><b>CASH</b></div>
+            <p>Pay directly to a club representative.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <form class="record" id="record">
+          <h3>Submit your donation record</h3>
+          <div class="fields">
+            <input required placeholder="Your name">
+            <select required>
+              <option value="">Method used</option>
+              <option>Wallet A</option>
+              <option>Wallet B</option>
+              <option>Wallet C</option>
+              <option>Cash</option>
+            </select>
+            <input required type="number" min="1" placeholder="Amount">
+            <input placeholder="Transaction ID">
+          </div>
+          <button class="btn btn-green" type="submit">Submit record</button>
+          <p id="thanks">Thank you! (Demo only. Connect a backend later to save this.)</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 My Club. Built while learning HTML &amp; CSS.</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
